@@ -1,0 +1,37 @@
+.campus {
+  margin: 80px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 10px; /* Add gap for better spacing between images */
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 23%;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet (Portrait) */
+@media (max-width: 768px) {
+  .gallery img {
+    width: 48%; /* Adjust width for smaller screens to fit two images per row */
+    margin-bottom: 10px; /* Add margin for spacing between rows */
+  }
+}
+
+/* Mobile (Landscape) */
+@media (max-width: 576px) {
+  .gallery img {
+    width: 100%; /* Full width for images on mobile screens */
+    margin-bottom: 10px; /* Add margin for spacing between images */
+  }
+}

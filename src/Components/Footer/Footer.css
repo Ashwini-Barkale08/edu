@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  margin: 10px auto; /* Corrected "a" to "auto" */
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #797979;
+  padding: 15px 0;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap; /* Ensure list items wrap on smaller screens */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footer ul li {
+  list-style: none;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet (Portrait) */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+  }
+
+  .footer ul li {
+    margin-left: 0;
+    margin-bottom: 10px; /* Add margin to separate items vertically */
+  }
+}
+
+/* Mobile (Landscape) */
+@media (max-width: 576px) {
+  .footer ul {
+    width: 100%; /* Ensure full width on small screens */
+  }
+
+  .footer ul li {
+    width: 100%; /* Full width for list items on small screens */
+    text-align: center; /* Center text for better presentation */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+}

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url("../../assets/hero.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-weight: 600;
+  text-shadow: 2px 2px whitesmoke;
+ 
+}
+
+.hero-text p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet (Portrait) */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .hero-text p {
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Mobile (Landscape) */
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 30px;
+    max-width: 400px;
+    margin: auto;
+    /* Further reduce font size */
+  }
+
+  .hero-text p {
+    margin: 15px auto;
+    font-size: 14px;
+  }
+}
